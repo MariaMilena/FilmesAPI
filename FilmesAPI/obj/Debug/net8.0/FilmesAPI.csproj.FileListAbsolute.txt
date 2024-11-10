@@ -232,3 +232,4 @@ C:\Users\Milena\Documents\MEGA\C#\FilmesAPI\FilmesAPI\obj\Debug\net8.0\FilmesAPI
 C:\Users\Milena\Documents\MEGA\C#\FilmesAPI\FilmesAPI\obj\Debug\net8.0\FilmesAPI.pdb
 C:\Users\Milena\Documents\MEGA\C#\FilmesAPI\FilmesAPI\obj\Debug\net8.0\FilmesAPI.genruntimeconfig.cache
 C:\Users\Milena\Documents\MEGA\C#\FilmesAPI\FilmesAPI\obj\Debug\net8.0\ref\FilmesAPI.dll
+C:\Users\Milena\Documents\MEGA\C#\FilmesAPI\FilmesAPI\obj\Debug\net8.0\FilmesAPI.sourcelink.json

@@ -12,6 +12,55 @@
             <returns>IActionResult</returns>
             <response code="201">Caso inserção seja feita com sucesso</response>
         </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.RecuperaFilmes(System.Int32,System.Int32)">
+            <summary>
+            Recupera a lista de filmes com base nos filtros aplicados
+            </summary>
+            <param name="skip">Número de registros a pular para paginação</param>
+            <param name="take">Número de registros a retornar para paginação</param>
+            <returns>Uma lista de filmes</returns>
+            <response code="200">Retorna a lista de filmes</response>
+            <response code="404">Se não houver filmes para retornar</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.RecuperaFilmesPorId(System.Int32)">
+            <summary>
+            Recupera um filme específico pelo ID
+            </summary>
+            <param name="id">ID do filme a ser recuperado</param>
+            <returns>O filme com o ID especificado</returns>
+            <response code="200">Retorna o filme solicitado</response>
+            <response code="404">Se o filme não for encontrado</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.UpdateFilme(System.Int32,FilmesAPI.Data.Dtos.UpdateFilmeDto)">
+            <summary>
+            Atualiza um filme existente
+            </summary>
+            <param name="id">ID do filme a ser atualizado</param>
+            <param name="filmeDto">Objeto com os dados atualizados do filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja bem-sucedida</response>
+            <response code="404">Caso o filme não seja encontrado</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesAPI.Data.Dtos.UpdateFilmeDto})">
+            <summary>
+            Atualiza parcialmente os dados de um filme
+            </summary>
+            <param name="id">ID do filme a ser atualizado</param>
+            <param name="patch">Operação de patch contendo as mudanças</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso a atualização seja bem-sucedida</response>
+            <response code="404">Caso o filme não seja encontrado</response>
+            <response code="400">Caso a requisição esteja mal-formada</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.DeletaFilme(System.Int32)">
+            <summary>
+            Remove um filme pelo ID
+            </summary>
+            <param name="id">ID do filme a ser deletado</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso o filme seja deletado com sucesso</response>
+            <response code="404">Caso o filme não seja encontrado</response>
+        </member>
         <member name="T:FilmesAPI.Migrations.CriandoTabelaDeFilme">
             <inheritdoc />
         </member>
